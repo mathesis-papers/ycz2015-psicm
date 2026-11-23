@@ -1,9 +1,26 @@
-# Mathesis paper template
+# An alternative proof extending Kang's refutation of Yang–Chu–Zhang (2015), Conjecture 1(ii), p. 15
 
-One repository for one exact Mathesis paper version. This template has no selected paper and no example books.
+**Authors:** Haobo Ma, Wenlin Zhang
 
-Authors can start from the [Mathesis LaTeX manuscript template](docs/layer-mathesis/MANUSCRIPT.md) for papers and short notes. Our own short notes use it as their default reference; sections and length follow the mathematical argument.
+We give an alternative proof extending Kang's (2026) refutation of Yang–Chu–Zhang (2015), Conjecture 1(ii), p. 15. For its digamma remainder family G_a, we prove G_a''(1/64)>0 for every a>=331467377585/629168992256, and G_a''(1/64)>1 for every a>=5269/10000. These bounds exclude complete monotonicity of -G_a on a parameter half-line containing strictly interior points of the conjectured range. We also give a necessary positive constant-coefficient condition in the authors' Problem 1 and characterize all its degree-four solutions as positive multiples of the function in their Theorem 4 at its endpoint.
 
-The upstream books template supplies the machinery; the Mathesis layer supplies the publisher adapter and the [enforced four-zone layout](docs/layer-mathesis/LAYOUT.md).
+- PDF: [frozen public file](paper.pdf)
+- License: CC-BY-4.0
+- Version: 2
+- Mathesis record: [ycz2015-psicm](https://mathesis-omega-research.apps.chrono-ai.fun/papers/ycz2015-psicm?version=2)
 
-Use [the publisher pipeline](docs/layer-mathesis/PIPELINE.md) to import a public projection with `paper.py fill`. It creates the paper record, one bilingual content skeleton and a generated paper README. Upgrade with `tbook template update`; keep preparation run records outside the repository.
+## How to cite
+
+Haobo Ma, Wenlin Zhang (2026). An alternative proof extending Kang's refutation of Yang–Chu–Zhang (2015), Conjecture 1(ii), p. 15. Mathesis, version 2. https://mathesis-omega-research.apps.chrono-ai.fun/papers/ycz2015-psicm?version=2
+
+## Statement progress
+
+| Statement | Formalization status | Source | Verification basis |
+|---|---|---|---|
+| Theorem (s1) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/074df09ddbbef1843ddb383577bfaa827f753e36/D5/S3/Analytic/YangChuZhangPsiCM/Refutation.lean) | No public receipt |
+| Corollary (s2) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/074df09ddbbef1843ddb383577bfaa827f753e36/D5/S3/Analytic/YangChuZhangPsiCM/Refutation.lean) | No public receipt |
+| Corollary (s3) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/074df09ddbbef1843ddb383577bfaa827f753e36/D5/S3/Analytic/YangChuZhangPsiCM/Refutation.lean) | No public receipt |
+
+## Contributions
+
+Original authors are listed above. Formalization contributors and attribution are retained in `formalization/nodes.json`; repository pull requests do not confer verification or credit. Submit formalization attempts through the Mathesis attempt path described in [CONTRIBUTING.md](CONTRIBUTING.md).

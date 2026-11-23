@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 71199,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "9eff2a949a4e46d5ec37fa2666a161a22adc581b1f2af7dc11b030aa99404edd",
+      "sha256": "9eff2a949a4e46d5ec37fa2666a161a22adc581b1f2af7dc11b030aa99404edd"
+    },
+    "source": {
+      "bytes": 11962,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "b4a26eed852b161c686322adc30581d0be4b8b6a848a86eab95a8a404fb89f09",
+      "sha256": "b4a26eed852b161c686322adc30581d0be4b8b6a848a86eab95a8a404fb89f09"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "We give an alternative proof extending Kang's (2026) refutation of Yang–Chu–Zhang (2015), Conjecture 1(ii), p. 15. For its digamma remainder family G_a, we prove G_a''(1/64)>0 for every a>=331467377585/629168992256, and G_a''(1/64)>1 for every a>=5269/10000. These bounds exclude complete monotonicity of -G_a on a parameter half-line containing strictly interior points of the conjectured range. We also give a necessary positive constant-coefficient condition in the authors' Problem 1 and characterize all its degree-four solutions as positive multiples of the function in their Theorem 4 at its endpoint.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 2,
+    "doi": null,
+    "lean_source": {
+      "revision": "074df09ddbbef1843ddb383577bfaa827f753e36",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/074df09ddbbef1843ddb383577bfaa827f753e36/D5/S3/Analytic/YangChuZhangPsiCM/Refutation.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 71199,
+      "sha256": "9eff2a949a4e46d5ec37fa2666a161a22adc581b1f2af7dc11b030aa99404edd",
+      "url": "/api/v1/collected-papers/ycz2015-psicm/files/pdf?version=2"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-22T23:02:49.607502235Z",
+    "record": "ycz2015-psicm",
+    "repository_name": "ycz2015-psicm",
+    "source": {
+      "bytes": 11962,
+      "sha256": "b4a26eed852b161c686322adc30581d0be4b8b6a848a86eab95a8a404fb89f09",
+      "url": "/api/v1/collected-papers/ycz2015-psicm/files/source?version=2"
+    },
+    "title": "An alternative proof extending Kang's refutation of Yang–Chu–Zhang (2015), Conjecture 1(ii), p. 15",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-22T23:02:49.607502235Z",
+        "revision": "2",
+        "version": 2
+      }
+    ],
+    "work": "ycz2015-psicm"
+  }
+}

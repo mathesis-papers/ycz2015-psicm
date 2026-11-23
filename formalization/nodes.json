@@ -1,0 +1,127 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:ycz2015-psicm:2:s1",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "074df09ddbbef1843ddb383577bfaa827f753e36",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/074df09ddbbef1843ddb383577bfaa827f753e36/D5/S3/Analytic/YangChuZhangPsiCM/Refutation.lean"
+      },
+      "lineage": "collected:ycz2015-psicm:s1",
+      "macros": {
+        "\\ab": "\\bar a",
+        "\\ac": "a_{\\mathrm c}",
+        "\\at": "a_{\\mathrm T}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ycz2015-psicm",
+      "scope": "in_scope",
+      "statement": "Put\n\\[\n\\ac=\\frac{331467377585}{629168992256},\\qquad\nM=\\frac{21943673}{1280},\\qquad \\ab=\\frac{5269}{10000}.\n\\]\nFor every real $a\\geq\\ac$,\n\\begin{equation}\nG_a''(1/64)>M(a-\\ac)\\geq0.\n\\end{equation}\nFor every $a\\geq\\ab$ the stronger numerical margin is\n\\begin{equation}\nG_a''(1/64)>\\frac{26102771679}{22937600000}>1.\n\n\\end{equation}\nThus $-G_a$ is not completely monotone whenever $a\\geq\\ac$.\nIn particular,\n$0<\\ac<\\ab<527/1000<155/294$, so \\eqref{eq:claim} is false.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "An alternative proof extending Kang's refutation of Yang–Chu–Zhang (2015), Conjecture 1(ii), p. 15",
+      "toolchain": null,
+      "version": 2,
+      "work": "ycz2015-psicm"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:ycz2015-psicm:2:s2",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "074df09ddbbef1843ddb383577bfaa827f753e36",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/074df09ddbbef1843ddb383577bfaa827f753e36/D5/S3/Analytic/YangChuZhangPsiCM/Refutation.lean"
+      },
+      "lineage": "collected:ycz2015-psicm:s2",
+      "macros": {
+        "\\ab": "\\bar a",
+        "\\ac": "a_{\\mathrm c}",
+        "\\at": "a_{\\mathrm T}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ycz2015-psicm",
+      "scope": "in_scope",
+      "statement": "Every solution of \\eqref{eq:problem} has $a_0>0$.\nMore generally, a nonconstant completely monotone function of the\ndisplayed polynomial--$R$ form has $a_0>0$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "An alternative proof extending Kang's refutation of Yang–Chu–Zhang (2015), Conjecture 1(ii), p. 15",
+      "toolchain": null,
+      "version": 2,
+      "work": "ycz2015-psicm"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:ycz2015-psicm:2:s3",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "074df09ddbbef1843ddb383577bfaa827f753e36",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/074df09ddbbef1843ddb383577bfaa827f753e36/D5/S3/Analytic/YangChuZhangPsiCM/Refutation.lean"
+      },
+      "lineage": "collected:ycz2015-psicm:s3",
+      "macros": {
+        "\\ab": "\\bar a",
+        "\\ac": "a_{\\mathrm c}",
+        "\\at": "a_{\\mathrm T}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ycz2015-psicm",
+      "scope": "in_scope",
+      "statement": "In Problem~1 with $n=1$, all solutions, and no others, are\n\\begin{equation}\nF(x)=tG_{\\at}(x),\\qquad t>0,\\qquad\n\\at=\\frac{11165}{8284}.\n\n\\end{equation}\nEquivalently, their coefficients are\n\\[\n(a_0,a_1,a_2)=24t\\left(\\frac{7\\at}{40}-\\frac{31}{336},\\at,1\\right),\n\\qquad (b_0,b_1)=t\\left(\\at-\\frac7{40},1\\right).\n\\]\nTheir scaled limit is\n$c=627404761t/10287535104>0$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "An alternative proof extending Kang's refutation of Yang–Chu–Zhang (2015), Conjecture 1(ii), p. 15",
+      "toolchain": null,
+      "version": 2,
+      "work": "ycz2015-psicm"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "ycz2015-psicm",
+  "revision": 2,
+  "problem_ids": ["ycz2015-psicm"],
+  "topic": "Yang–Chu–Zhang (2015), Conjecture 1(ii), p. 15, and the coefficient question in Problem 1, p. 16",
+  "title": "An alternative proof extending Kang's refutation of Yang–Chu–Zhang (2015), Conjecture 1(ii), p. 15",
+  "creators": [
+    {"name": "Ma, Haobo", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Zhang, Wenlin", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "abstract": "We give an alternative proof extending Kang's (2026) refutation of Yang–Chu–Zhang (2015), Conjecture 1(ii), p. 15. For its digamma remainder family G_a, we prove G_a''(1/64)>0 for every a>=331467377585/629168992256, and G_a''(1/64)>1 for every a>=5269/10000. These bounds exclude complete monotonicity of -G_a on a parameter half-line containing strictly interior points of the conjectured range. We also give a necessary positive constant-coefficient condition in the authors' Problem 1 and characterize all its degree-four solutions as positive multiples of the function in their Theorem 4 at its endpoint.",
+  "summary": "An alternative derivative proof extends Kang's known refutation: -G_a cannot be completely monotone for a>=331467377585/629168992256. Problem 1 is answered for n=1 by asymptotic cancellation and the source's Theorem 4: exactly t G_(11165/8284), t>0, with x^-6 coefficient 627404761t/10287535104. Every degree requires a_0>0. Conjecture 1(i), the n>=2 classification and the exact admissible range below the exclusion bound are not covered. The linked Lean result negates the source equivalence and supports the earlier a>=155/294-1/10000 half-unit bound; the extension and coefficient consequences have written proofs.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/074df09ddbbef1843ddb383577bfaa827f753e36/D5/S3/Analytic/YangChuZhangPsiCM/Refutation.lean"
+}

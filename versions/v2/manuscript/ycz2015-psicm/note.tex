@@ -1,0 +1,316 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\ac}{a_{\mathrm c}}
+\newcommand{\ab}{\bar a}
+\newcommand{\at}{a_{\mathrm T}}
+\title{An alternative proof extending Kang's refutation of
+Yang--Chu--Zhang (2015), Conjecture 1(ii), p.~15}
+\hypersetup{pdftitle={An alternative proof extending Kang's refutation of Yang-Chu-Zhang (2015), Conjecture 1(ii), p. 15},pdfauthor={Haobo Ma and Wenlin Zhang}}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\
+\small ChronoAI Pte Ltd, Singapore}
+\date{November 7, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We give an alternative proof extending Kang's (2026) refutation of
+Yang--Chu--Zhang (2015), Conjecture~1(ii), p.~15.
+For its digamma remainder family $G_a$, we prove $G_a''(1/64)>0$
+for every $a\geq331467377585/629168992256$, and $G_a''(1/64)>1$
+for every $a\geq5269/10000$.
+These bounds exclude complete monotonicity of $-G_a$ on a parameter
+half-line containing strictly interior points of the conjectured range.
+We also give a necessary positive constant-coefficient condition in the
+authors' Problem~1 and characterize all its degree-four solutions as
+positive multiples of the function in their Theorem~4 at its endpoint.
+\end{abstract}
+
+\section{The conjecture and the quantitative extension}
+Yang, Chu and Zhang~\cite[Conjecture~1(ii), p.~15]{ycz} conjectured an
+exact complete-monotonicity threshold. Kang~\cite{kang} refuted its
+sufficient direction; we extend the explicit derivative obstruction and
+deduce coefficient consequences for the accompanying Problem~1.
+Write $\psi=\Gamma'/\Gamma$ and, for $x>0$, set
+\begin{align}
+R(x)&=\psi(x+1/2)-\log x,\label{eq:R}\\
+P_a(x)&=x^4+ax^2+\frac{7a}{40}-\frac{31}{336},\nonumber\\
+G_a(x)&=24P_a(x)R(x)-\left(x^2-\frac7{40}+a\right).
+\label{eq:G}
+\end{align}
+These are the source's equations (1.10) and (3.3). Its conjecture asserts
+\begin{equation}
+-G_a\text{ is completely monotone on }(0,\infty)
+\quad\Longleftrightarrow\quad a\leq\frac{155}{294}.
+\label{eq:claim}
+\end{equation}
+The earlier posing is Yang~\cite[Conjecture~1(ii), p.~14]{yang}.
+Complete monotonicity means smoothness and
+$(-1)^nf^{(n)}(x)\geq0$ for every integer $n\geq0$ and every $x>0$.
+
+Kang's Theorem~1 gives a strictly interior positive parameter and a
+midpoint-convexity obstruction. His accompanying \texttt{PROOF.md}
+also gives a derivative counterexample at $a=527/1000$, $x=1/50$.
+The following estimate supplies a different evaluation point and an
+explicit lower exclusion bound; it is not an exact replacement threshold.
+
+\begin{theorem}\label{thm:main}
+Put
+\[
+\ac=\frac{331467377585}{629168992256},\qquad
+M=\frac{21943673}{1280},\qquad \ab=\frac{5269}{10000}.
+\]
+For every real $a\geq\ac$,
+\begin{equation}
+G_a''(1/64)>M(a-\ac)\geq0.\label{eq:main}
+\end{equation}
+For every $a\geq\ab$ the stronger numerical margin is
+\begin{equation}
+G_a''(1/64)>\frac{26102771679}{22937600000}>1.
+\label{eq:simple}
+\end{equation}
+Thus $-G_a$ is not completely monotone whenever $a\geq\ac$.
+In particular,
+$0<\ac<\ab<527/1000<155/294$, so \eqref{eq:claim} is false.
+\end{theorem}
+
+\section{A rational second-derivative estimate}
+The classical identities used below are~\cite[\S\S5.4(ii), 5.15]{dlmf}
+\begin{equation}
+\psi(1/2)=-\gamma-2\log2,\quad
+\psi'(z)=\sum_{n=0}^{\infty}\frac1{(n+z)^2},\quad
+\psi''(z)=-2\sum_{n=0}^{\infty}\frac1{(n+z)^3}\quad(z>0).
+\label{eq:psi}
+\end{equation}
+The derivative series converge uniformly on positive compact intervals,
+which justifies the last identity. Let $x_0=1/64$ and $z_0=33/64$.
+We claim
+\begin{equation}
+R(x_0)>\frac{11}{6},\qquad R'(x_0)\geq-64,\qquad
+R''(x_0)>4078.\label{eq:three}
+\end{equation}
+Indeed,
+\[
+\log2=2\int_0^{1/3}\frac{dt}{1-t^2}>\frac23,
+\qquad \gamma<H_2-\log2<\frac56.
+\]
+Here $H_n-\log n$ decreases to $\gamma$, since
+$\log(1+1/n)=\int_n^{n+1}dt/t>1/(n+1)$.
+Positivity of $\psi'$ and $z_0>1/2$ give
+$R(x_0)>4\log2-\gamma>11/6$, and
+$R'(x_0)=\psi'(z_0)-64\geq-64$.
+For the cubic series, the identity
+\[
+(n+97/64)^3-(n+1)(n+2)
+=n^3+\frac{227}{64}n^2+\frac{15939}{4096}n
+ +\frac{388385}{262144}>0\quad(n\geq0)
+\]
+implies
+\[
+\sum_{n=0}^{\infty}\frac1{(n+z_0)^3}
+\leq\left(\frac{64}{33}\right)^3+
+\sum_{n=0}^{\infty}\frac1{(n+1)(n+2)}
+=\frac{298081}{35937}<9.
+\]
+The comparison series telescopes. Hence
+$R''(x_0)=4096+\psi''(z_0)>4096-18=4078$.
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Twice differentiating \eqref{eq:G} gives
+\begin{equation}
+G_a''(x)=24\bigl(P_a''(x)R(x)+2P_a'(x)R'(x)
++P_a(x)R''(x)\bigr)-2,\label{eq:derivative}
+\end{equation}
+where $P_a'=4x^3+2ax$ and $P_a''=12x^2+2a$.
+At $a=\ac$, exact substitution gives
+\[
+P_{\ac}(x_0)=\frac{236541533}{3775013953536}>0.
+\]
+Since $\ac>0$, both $P_{\ac}'(x_0)$ and $P_{\ac}''(x_0)$ are
+positive. All three quantities increase with $a$, with respective
+slopes $3589/20480$, $1/32$ and $2$.
+Thus all coefficients multiplying the bounds in \eqref{eq:three}
+are nonnegative for $a\geq\ac$. Consequently
+\[
+G_a''(x_0)>L(a):=
+24\left(\frac{11}{6}P_a''(x_0)-128P_a'(x_0)
++4078P_a(x_0)\right)-2.
+\]
+Rational arithmetic gives $L'(a)=M$ and $L(\ac)=0$, proving
+\eqref{eq:main}, including the strict inequality at $a=\ac$.
+Likewise $L(\ab)=26102771679/22937600000>1$, proving
+\eqref{eq:simple}. Complete monotonicity of $-G_a$ would require
+$(-G_a)''(x_0)\geq0$, a contradiction.
+\end{proof}
+
+\section{Coefficient consequences for Problem 1}
+Yang--Chu--Zhang~\cite[Problem~1, p.~16]{ycz} ask for coefficients such that
+\begin{equation}
+F(x)=R(x)\sum_{k=0}^{n+1}a_kx^{2k}-\sum_{k=0}^{n}b_kx^{2k}
+\quad\text{is completely monotone},\qquad
+\lim_{x\to\infty}x^{2n+4}F(x)=c\ne0,\pm\infty.
+\label{eq:problem}
+\end{equation}
+The finite nonzero limit is part of the question, in addition to
+complete monotonicity.
+
+\begin{corollary}\label{cor:constant}
+Every solution of \eqref{eq:problem} has $a_0>0$.
+More generally, a nonconstant completely monotone function of the
+displayed polynomial--$R$ form has $a_0>0$.
+\end{corollary}
+\begin{proof}
+Write $A(x)=\sum a_kx^{2k}$ and $B(x)=\sum b_kx^{2k}$.
+The function $h(x)=\psi(x+1/2)$ is smooth near zero, so
+$R(x)=-\log x+O(1)$ and $R'(x)=-1/x+O(1)$ as $x\downarrow0$.
+If $a_0<0$, then $F(x)\to-\infty$, contradicting $F\geq0$.
+If $a_0=0$, evenness gives $A(x)=O(x^2)$, $A'(x)=O(x)$ and
+$B'(x)=O(x)$, whence $F'(x)=O(x|\log x|)+O(x)\to0$.
+Complete monotonicity gives $F'\leq0$ and $F''\geq0$.
+As $F'$ is increasing, its zero limit at the left endpoint forces
+$F'\geq0$ as well. Thus $F$ is constant.
+In \eqref{eq:problem}, a constant must be zero to have a finite scaled
+limit, which would give $c=0$. This is excluded.
+\end{proof}
+
+\begin{corollary}\label{cor:quartic}
+In Problem~1 with $n=1$, all solutions, and no others, are
+\begin{equation}
+F(x)=tG_{\at}(x),\qquad t>0,\qquad
+\at=\frac{11165}{8284}.
+\label{eq:quartic}
+\end{equation}
+Equivalently, their coefficients are
+\[
+(a_0,a_1,a_2)=24t\left(\frac{7\at}{40}-\frac{31}{336},\at,1\right),
+\qquad (b_0,b_1)=t\left(\at-\frac7{40},1\right).
+\]
+Their scaled limit is
+$c=627404761t/10287535104>0$.
+\end{corollary}
+\begin{proof}
+The digamma asymptotic expansion~\cite[5.11.2]{dlmf}, translated by
+$1/2$, gives
+\begin{equation}
+R(x)=\frac1{24x^2}-\frac7{960x^4}+\frac{31}{8064x^6}
+-\frac{127}{30720x^8}+\frac{511}{67584x^{10}}+O(x^{-12}).
+\label{eq:asymptotic}
+\end{equation}
+For $F=R(a_2x^4+a_1x^2+a_0)-(b_1x^2+b_0)$,
+cancellation of the $x^2,x^0,x^{-2},x^{-4}$ coefficients is necessary
+and sufficient for $F=O(x^{-6})$. These four equations give, successively,
+\[
+b_1=\frac{a_2}{24},\quad b_0=\frac{a_1}{24}-\frac{7a_2}{960},\quad
+a_0=\frac{7a_1}{40}-\frac{31a_2}{336},\quad
+a_1=\frac{11165}{8284}a_2.
+\]
+Thus $F=(a_2/24)G_{\at}$. The next coefficient in
+\eqref{eq:asymptotic} gives the stated $c$ with $t=a_2/24$.
+Since $F\geq0$ and $c\ne0$, necessarily $c>0$, hence $t>0$.
+Conversely, Yang--Chu--Zhang's Theorem~4, pp.~12--13, proves that
+$G_a$ is strictly completely monotone exactly when $a\geq\at$.
+At $a=\at$ it supplies complete monotonicity, and the expansion supplies
+the required finite positive limit. This proves sufficiency.
+\end{proof}
+
+The classification is a coefficient consequence of the source's
+Theorem~4, not a new proof of that theorem. If the indexing allows $n=0$,
+the same cancellation argument gives exactly
+$F(x)=t\{24(x^2+7/40)R(x)-1\}$, $t>0$, with
+$c=2071t/33600$; complete monotonicity is the source's Theorem~2.
+Indeed $b_0=a_1/24$, $a_0=7a_1/40$, and $t=a_1/24$.
+
+For comparison, substitution of the negatives of the coefficients in
+\eqref{eq:G} gives $-G_a$, which Theorem~\ref{thm:main} excludes for
+$a\geq\ac$. But most of that family does not satisfy Problem~1's
+decay condition even before complete monotonicity is considered:
+\begin{equation}
+\lim_{x\to\infty}x^4(-G_a(x))
+=-\frac{2071}{33600}(a-\at).
+\label{eq:decay}
+\end{equation}
+Only $a=\at$ can have the required finite $x^6$ limit; there
+$-G_{\at}$ has a negative limit coefficient and is excluded.
+Thus the derivative counterexample must not be confused with a full
+classification of the coefficient problem.
+
+\section{Coverage and mathematical evidence}
+\noindent
+\begin{tabular}{@{}p{.30\linewidth}p{.65\linewidth}@{}}
+\toprule
+Source item in \cite{ycz} & Coverage\\
+\midrule
+Conjecture 1(ii), p.~15 & Refuted: Kang (2026). Theorem~\ref{thm:main}
+extends the derivative exclusion. A corrected necessary condition is
+$a<\ac$, not a replacement equivalence.\\[3pt]
+Conjecture 1(i), p.~15 & Ratio monotonicity: not covered.\\[3pt]
+Remark 3, pp.~14--15 & Its necessary condition $a\leq155/294$ is
+strengthened to $a<\ac$. Bounds (4.2)--(4.3) do not imply complete
+monotonicity.\\[3pt]
+Problem 1, p.~16 & Answered for $n=1$ by
+Corollary~\ref{cor:quartic}, using the prior Theorem~4;
+Corollary~\ref{cor:constant} gives $a_0>0$ for every $n$.
+The classification for $n\geq2$ is not covered.\\[3pt]
+Theorems 2--4; Remarks 4--5 & Prior results cited, not refuted.
+The endpoint in Theorem~4 supplies the positive family above;
+the sequence bounds in Remarks 4--5 are unchanged.\\
+\bottomrule
+\end{tabular}
+
+\medskip
+The introductory discussion of Chen's conjectures on p.~3 concerns
+different shifted functions; the source already refutes the Bernstein
+claim for $H$ there and proves its cited complete-monotonicity claim
+in Theorem~1. The other Bernstein claim and harmonic-number questions
+are not covered by the present estimates.
+The complete parameter set for $-G_a$ below $\ac$ is not determined here.
+
+\paragraph{Written proofs, finite calculations and Lean declarations.}
+In
+\href{https://github.com/the-omega-institute/trureturing/blob/074df09ddbbef1843ddb383577bfaa827f753e36/D5/S3/Analytic/YangChuZhangPsiCM/Refutation.lean}{\texttt{Refutation.lean}}
+at revision \texttt{074df09}, the declaration \texttt{result} proves the
+negation of \eqref{eq:claim}; its definition \texttt{claim} quantifies
+over every real $a$. The file's private lemma
+\texttt{uniform\_\allowbreak second\_\allowbreak deriv} proves
+$G_a''(1/64)>1/2$ for $a\geq155/294-1/10000$.
+The lower exclusion bound $\ac$, the margin at $\ab$ and the coefficient
+corollaries have written proofs here; they are not conclusions of that
+Lean lemma. The standard-library program \texttt{verify.py} checks
+the rational bounds, affine identities, translated asymptotic coefficients
+and coefficient cancellations. Analytic identities, convergence,
+endpoint reasoning and complete monotonicity supplied by the cited
+Theorems~2 and~4 have the written or cited proofs specified above.
+
+\begin{thebibliography}{9}
+\bibitem{ycz}
+Z.-H. Yang, Y.-M. Chu and X.-H. Zhang,
+Necessary and sufficient conditions for functions involving the psi function
+to be completely monotonic,
+\emph{Journal of Inequalities and Applications} \textbf{2015}, 157 (2015).
+\href{https://doi.org/10.1186/s13660-015-0674-8}{doi:10.1186/s13660-015-0674-8}.
+
+\bibitem{yang}
+Z.-H. Yang, Several completely monotone functions related to DeTemple's
+sequence, 2014. \href{https://arxiv.org/abs/1409.6411v1}{arXiv:1409.6411v1}.
+
+\bibitem{kang}
+M. Kang, A failure of the DeTemple complete-monotonicity threshold,
+2026. Theorem~1 and accompanying \texttt{PROOF.md}.
+\href{https://doi.org/10.5281/zenodo.23718266}{doi:10.5281/zenodo.23718266}.
+
+\bibitem{dlmf}
+NIST Digital Library of Mathematical Functions,
+\href{https://dlmf.nist.gov/5.4.E13}{equation 5.4.13},
+\href{https://dlmf.nist.gov/5.15.E1}{equation 5.15.1} and
+\href{https://dlmf.nist.gov/5.11.E2}{equation 5.11.2}.
+Accessed November 7, 2026.
+\end{thebibliography}
+
+\smallskip\noindent\small
+\copyright\ 2026 Haobo Ma and Wenlin Zhang.
+Licensed under \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}.
+\end{document}

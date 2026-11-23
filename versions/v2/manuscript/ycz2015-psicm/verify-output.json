@@ -1,0 +1,47 @@
+{
+  "coverage": "Exact rational calculations for Theorem 1 and the coefficient corollaries",
+  "arithmetic": "Python fractions.Fraction; exact rational arithmetic",
+  "x": "1/64",
+  "a_c": "331467377585/629168992256",
+  "a_bar": "5269/10000",
+  "ordered_positive_parameters": [
+    "331467377585/629168992256",
+    "5269/10000",
+    "527/1000",
+    "774853/1470000",
+    "155/294"
+  ],
+  "P_at_a_c": "236541533/3775013953536",
+  "positive_parameter_slopes": [
+    "3589/20480",
+    "1/32",
+    "2"
+  ],
+  "telescoper_coefficients_ascending": [
+    "388385/262144",
+    "15939/4096",
+    "227/64",
+    "1"
+  ],
+  "cubic_series_upper_bound": "298081/35937",
+  "R_strict_lower_bound": "11/6",
+  "R_second_strict_lower_bound": "4078",
+  "affine_bound_at_a_c": "0",
+  "affine_bound_parameter_slope": "21943673/1280",
+  "G_second_strict_lower_bound_at_a_bar": "26102771679/22937600000",
+  "margin_above_one": "3165171679/22937600000",
+  "earlier_half_unit_range_lower_bound": "2289608094539/481689600000",
+  "asymptotic_coefficients_x_minus_2_through_10": [
+    "1/24",
+    "-7/960",
+    "31/8064",
+    "-127/30720",
+    "511/67584"
+  ],
+  "quartic_cancellation_determinant": "2071/19353600",
+  "quartic_endpoint": "11165/8284",
+  "quartic_x_minus_6_coefficient_per_t": "627404761/10287535104",
+  "quadratic_x_minus_4_coefficient_per_t": "2071/33600",
+  "all_finite_inequalities_satisfied": true,
+  "analytic_scope": "Series, derivative bounds, endpoint arguments and coefficient classification have written or cited proofs in note.tex"
+}
