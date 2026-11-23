@@ -28,9 +28,9 @@
         "name": "Wenlin Zhang"
       }
     ],
-    "concept_doi": null,
+    "concept_doi": "10.5281/zenodo.24407831",
     "current_version": 2,
-    "doi": null,
+    "doi": "10.5281/zenodo.24407832",
     "lean_source": {
       "revision": "074df09ddbbef1843ddb383577bfaa827f753e36",
       "url": "https://github.com/the-omega-institute/trureturing/blob/074df09ddbbef1843ddb383577bfaa827f753e36/D5/S3/Analytic/YangChuZhangPsiCM/Refutation.lean"

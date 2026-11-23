@@ -5,13 +5,15 @@
 We give an alternative proof extending Kang's (2026) refutation of Yang–Chu–Zhang (2015), Conjecture 1(ii), p. 15. For its digamma remainder family G_a, we prove G_a''(1/64)>0 for every a>=331467377585/629168992256, and G_a''(1/64)>1 for every a>=5269/10000. These bounds exclude complete monotonicity of -G_a on a parameter half-line containing strictly interior points of the conjectured range. We also give a necessary positive constant-coefficient condition in the authors' Problem 1 and characterize all its degree-four solutions as positive multiples of the function in their Theorem 4 at its endpoint.
 
 - PDF: [frozen public file](paper.pdf)
+- DOI: [https://doi.org/10.5281/zenodo.24407832](https://doi.org/10.5281/zenodo.24407832)
+- Concept DOI: [https://doi.org/10.5281/zenodo.24407831](https://doi.org/10.5281/zenodo.24407831)
 - License: CC-BY-4.0
 - Version: 2
 - Mathesis record: [ycz2015-psicm](https://mathesis-omega-research.apps.chrono-ai.fun/papers/ycz2015-psicm?version=2)
 
 ## How to cite
 
-Haobo Ma, Wenlin Zhang (2026). An alternative proof extending Kang's refutation of Yang–Chu–Zhang (2015), Conjecture 1(ii), p. 15. Mathesis, version 2. https://mathesis-omega-research.apps.chrono-ai.fun/papers/ycz2015-psicm?version=2
+Haobo Ma, Wenlin Zhang (2026). An alternative proof extending Kang's refutation of Yang–Chu–Zhang (2015), Conjecture 1(ii), p. 15. Mathesis, version 2. https://doi.org/10.5281/zenodo.24407832
 
 ## Statement progress
 
