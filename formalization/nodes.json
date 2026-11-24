@@ -27,7 +27,7 @@
         "\\ac": "a_{\\mathrm c}",
         "\\at": "a_{\\mathrm T}"
       },
-      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "next_step": "Formalization work is coordinated through the shared requests.",
       "proof_basis": null,
       "proof_state": "preparing",
       "receipt": null,
@@ -68,7 +68,7 @@
         "\\ac": "a_{\\mathrm c}",
         "\\at": "a_{\\mathrm T}"
       },
-      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "next_step": "Formalization work is coordinated through the shared requests.",
       "proof_basis": null,
       "proof_state": "preparing",
       "receipt": null,
@@ -109,7 +109,7 @@
         "\\ac": "a_{\\mathrm c}",
         "\\at": "a_{\\mathrm T}"
       },
-      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "next_step": "Formalization work is coordinated through the shared requests.",
       "proof_basis": null,
       "proof_state": "preparing",
       "receipt": null,
