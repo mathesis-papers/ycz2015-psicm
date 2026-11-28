@@ -31,6 +31,7 @@
     "concept_doi": "10.5281/zenodo.24407831",
     "current_version": 2,
     "doi": "10.5281/zenodo.24407832",
+    "kind": "note",
     "lean_source": {
       "revision": "074df09ddbbef1843ddb383577bfaa827f753e36",
       "url": "https://github.com/the-omega-institute/trureturing/blob/074df09ddbbef1843ddb383577bfaa827f753e36/D5/S3/Analytic/YangChuZhangPsiCM/Refutation.lean"
@@ -55,10 +56,12 @@
     "title": "An alternative proof extending Kang's refutation of Yang–Chu–Zhang (2015), Conjecture 1(ii), p. 15",
     "versions": [
       {
+        "changelog": null,
         "previous_version": null,
         "published_on": "2026-11-22T23:02:49.607502235Z",
         "revision": "2",
-        "version": 2
+        "version": 2,
+        "version_label": null
       }
     ],
     "work": "ycz2015-psicm"
